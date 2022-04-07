@@ -25,7 +25,7 @@
 * There is a part of dmenu's code that has to be removed, the comment specifies it blocks colored glyphs
 
 ## Virtualbox:
-* Currently "official artix stuff" is broken, the script from the official Virtualbox page works
+* Currently (probably wrong by now) "official artix stuff" is broken, the script from the official Virtualbox page works
 
 ## Bluetooth devices:
 * With pulse, proceed as indicated in the [wiki](https://wiki.archlinux.org/index.php/Bluetooth#PulseAudio), that means install `pulseaudio-bluetooth` and add `load-module module-bluetooth-policy
@@ -38,7 +38,7 @@ load-module module-bluetooth-discover` at the end of `/etc/pulse/system.pa` and 
 
 ## DWM:
 * One can use multiple modifier keys: `{ MODKEY|Mod1Mask,             	XK_b , 	   					spawn, 		   {.v = browser } },`
-* Graph showing different dwm diffs: https://coggle.it/diagram/X9IiSSM6PTWOM9Wz/t/dwm-patches
+* Graph showing different dwm diffs: https://coggle.it/diagram/X9IiSSM6PTWOM9Wz/t/dwm-patches - [archive image](https://i.imgur.com/ACCrQuJ.png)
 
 ## Grub
 * Graphical config done hassle-free with `grub-customizer`
@@ -100,6 +100,10 @@ fi
 * `yay -G <package_name>` - This creates a folder named after a package. `cd` into it.
 * Edit the `PKGBUILD` file (remove the conflicting dependency/ies)
 * Run `makepkg -si`
+
+## Issues with KDE key-ring (for example error while logging in to github-desktop)
+* Install gnome key-ring
+* In `.xinitrc`, change `exec dwm` to `exec dbus-run-session dwm`
 
 ## Linux alternatives by Dbp:
 ### GUI:
