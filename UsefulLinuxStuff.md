@@ -41,7 +41,7 @@ load-module module-bluetooth-discover` at the end of `/etc/pulse/system.pa` and 
 * Graph showing different dwm diffs: https://coggle.it/diagram/X9IiSSM6PTWOM9Wz/t/dwm-patches - [archive image](https://i.imgur.com/ACCrQuJ.png)
 
 ## Grub
-* Graphical config done hassle-free with `grub-customizer`
+* ~~Graphical config done hassle-free with `grub-customizer`~~ this will break your grub. Don't.
 
 ## Glyphs and dwm:
 * Colored emojis don't work out of the box, Luke Smith has a [video](https://videos.lukesmith.xyz/w/eCqUSha1rbe56vPgQwqWa5) on it
@@ -104,6 +104,9 @@ fi
 ## Issues with KDE key-ring (for example error while logging in to github-desktop)
 * Install gnome key-ring
 * In `.xinitrc`, change `exec dwm` to `exec dbus-run-session dwm`
+
+## Automounting disks
+* Check out `udiskie` (aur)
 
 ## Linux alternatives by Dbp:
 ### GUI:
