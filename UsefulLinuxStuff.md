@@ -121,7 +121,7 @@ fi
 
 # Other/Misc
 
-# Handy programs:
+## Handy programs:
 * Calculator: `qalculate` (cli), `qalculate-gtk` (gui)
 * Browser: `firefox`, `brave`, `chromium`, `lynx` (cli, y tho)
 * Image manipulation: `gimp`, `pinta` (sucks tbh)
