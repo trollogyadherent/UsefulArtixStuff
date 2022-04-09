@@ -1,5 +1,5 @@
 # Newbie Arch/Artix tips and tricks
-## This is a collection of misc tips, tricks, and fixes that I decided to document alongside my painful journey into Linux. If someone finds it useful, good. Otherwise it will be a lifesaver if I have to reinstall my system. I got meme'd into using Arch + dwm (sorry, Artix, without "soystemd" of course!) right away and I sometimes regret it and sometimes don't. This file is specific to my own machine: Artix base, OpenRC, dwm, Nvidia, Laptop. Fantastic combo if you are concerned about drivers /s
+### This is a collection of misc tips, tricks, and fixes that I decided to document alongside my painful journey into Linux. If someone finds it useful, good. Otherwise it will be a lifesaver if I have to reinstall my system. I got meme'd into using Arch + dwm (sorry, Artix, without "soystemd" of course!) right away and I sometimes regret it and sometimes don't. This file is specific to my own machine: Artix base, OpenRC, dwm, Nvidia, Laptop. Fantastic combo if you are concerned about drivers /s
 ## 
 ## 
 
