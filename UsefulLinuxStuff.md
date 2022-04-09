@@ -48,7 +48,8 @@ load-module module-bluetooth-discover` at the end of `/etc/pulse/system.pa` and 
 * `Nerd Font` glyphs appear super small for me, installing `Awesome Font` and `Material Font` was enough and works
 
 ## Fixing home perms:
-* ```# find /home/user/ -type d -print0 | xargs -0 chmod 0777<br># find /home/user/ -type f -print0 | xargs -0 chmod 0777```
+* `# find /home/user/ -type d -print0 | xargs -0 chmod 0777`
+* `# find /home/user/ -type f -print0 | xargs -0 chmod 0777`
 
 ## Torsocks not working
 * Change the port in `/etc/tor/torsocks.conf` to one that your tor broswer uses (`TorPort 9150` should work)
@@ -114,33 +115,23 @@ fi
 ## Lutris, esync thing
 * Follow this video: https://yewtu.be/watch?v=AVqsdO7xENg, it is based on these sources: https://wiki.artixlinux.org/Main/Repositories [archive](https://archive.ph/hpjoV), https://forums.gentoo.org/viewtopic-t-1111528-highlight-ulimit.html [archive](https://archive.ph/yZ4M5), https://www.christitus.com/ultimate-linux-gaming-guide/ [archive](https://archive.ph/cpMyn), https://github.com/AUNaseef/protonup
 
-## Linux alternatives by Dbp:
-### GUI:
-* Calculator > qalculate(-gtk)
-* Explorer/Winfile > XFE/Thunar/nautilus/pcmanfm (ugly but displays image thumbnails)
-* Internet Explorer/Edge > Surf/LibreWolf/Degoogled Chromium/Brave
-* Outlook > Thunderbird/claws-mail
-* Paint/.net > Pinta (note from me: Pinta is still trash. I fire up paint.net in vmware sometimes if I really need something more than cropping an image. Yes I know about GIMP, yes I don't like it either)
-* VSXX > VSC?
-* WordPad > Abiword
-* Notepad/++ > leafpad(use tabbed for tabs)
-* Windows Media Player/MPC > VLC (mpv woeks too)
-* Windows Photo Viewer > GPicview/Viewnior
-* MS Office > LibreOffice
-* Cmd > Urxvt (I use Alacritty, screw low-RAM fanboys)
-* Powertoys > DWM
-* Task Manager > LXTask
-* WinSCP > filezilla / muCommander
-* Logitech gaming software > (kind of) piper
-* GitHub gui > GitKraken
+## pip search
+* `pip search` was discontinued. Use [pip-search](https://pypi.org/project/pip-search/). Add the snippet provided on the website to `.bashrc` and you'll be able to use `pip search <query>` again
 
-### CLI:
-* Internet Explorer > Lynx (but why would you do this)
-* Outlook > Mutt
-* Notepad/++ > Micro/Vis
-* Windows Media Player/MPC > MPV/MOC
-* Windows Photo Viewer > viu
-* Task Manager > htop
+
+# Other/Misc
+
+# Handy programs:
+* Calculator: `qalculate` (cli), `qalculate-gtk` (gui)
+* Browser: `firefox`, `brave`, `chromium`, `lynx` (gui, y tho)
+* Image manipulation: `gimp`, `pinta` (sucks tbh)
+* Office: `libreoffice`
+* Mail: `thunderbird`, `claws-mail`, `neomutt` (cli)
+* Media consoomption: `mpv`, `vlc`
+* PDF viewing: `zathura`
+* Image viewing: `sxiv`
+* Text editing: `sublime`, `neovim`
+
 
 ## Ricing Guides:
 * [dwm status](https://www.youtube.com/watch?v=6vTrVPpNodI)
@@ -157,18 +148,13 @@ fi
 * [https://github.com/mayfrost/guides/blob/master/ALTERNATIVES.md](https://github.com/mayfrost/guides/blob/master/ALTERNATIVES.md )
 
 ## Misc
-* [urxvt](https://github.com/charnley/dotfiles.x/blob/master/Xresources)
+* [some urxvt dotfiles](https://github.com/charnley/dotfiles.x/blob/master/Xresources)
 * [Smoking Spectre dotfiles](https://github.com/SmokinSpectre/Dots)
-* [wolfiy](https://gitlab.com/wolfiy)
-* [Bot converting telegram sticker packs to signal](https://t.me/telesignal_bot)
+* [wolfiy dotfiles](https://gitlab.com/wolfiy)
 
 ## Notes/TODO:
 * Rice dwm and dstatus, ~~patch dwm so the status is on all screens~~
 * setup and rice [these](https://github.com/dudik/herbe) toasts. They can be killed with a precise `kill` command, bind it to dwm and voilà
 * daemonize isync
 
-# ------ Other Useful Stuff -------
 
-
-## pip search
-* `pip search` was discontinued. Use [pip-search](https://pypi.org/project/pip-search/). Add the snippet provided on the website to `.bashrc` and you'll be able to use `pip search <query>` again
