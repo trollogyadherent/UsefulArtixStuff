@@ -123,7 +123,7 @@ fi
 
 # Handy programs:
 * Calculator: `qalculate` (cli), `qalculate-gtk` (gui)
-* Browser: `firefox`, `brave`, `chromium`, `lynx` (gui, y tho)
+* Browser: `firefox`, `brave`, `chromium`, `lynx` (cli, y tho)
 * Image manipulation: `gimp`, `pinta` (sucks tbh)
 * Office: `libreoffice`
 * Mail: `thunderbird`, `claws-mail`, `neomutt` (cli)
