@@ -48,8 +48,7 @@ load-module module-bluetooth-discover` at the end of `/etc/pulse/system.pa` and 
 * `Nerd Font` glyphs appear super small for me, installing `Awesome Font` and `Material Font` was enough and works
 
 ## Fixing home perms:
-* ```# find /home/user/ -type d -print0 | xargs -0 chmod 0777
-# find /home/user/ -type f -print0 | xargs -0 chmod 0777```
+* ```# find /home/user/ -type d -print0 | xargs -0 chmod 0777<br># find /home/user/ -type f -print0 | xargs -0 chmod 0777```
 
 ## Torsocks not working
 * Change the port in `/etc/tor/torsocks.conf` to one that your tor broswer uses (`TorPort 9150` should work)
@@ -106,7 +105,14 @@ fi
 * In `.xinitrc`, change `exec dwm` to `exec dbus-run-session dwm`
 
 ## Automounting disks
-* Check out `udiskie` (aur)
+* Check out udisks and `udiskie` (aur). Installing and running it enables mounting drives on plug. Apparently there is an openrc service package but even when not installed it somehow works.
+* Udisk does not allow to mount specific drives to specific folders. For that modifying `/etc/fstab` is needed. Find out the uuid of a partition you would like to mount using `sudo blkid`. Get your uid and gid with `id -u` and `id -g`, usually they're both 1000. Then append an entry like this `UUID=01D6C5D8FF828540	/home/jack/Hentai	ntfs	uid=1000,gid=1000,dmask=027,fmask=137` to the `/etc/fstab` file. If you are using another filesystem on that partition, replace ntfs by it. For example ext4.
+
+## Windows 10 Dualboot and Veracrypt overriding boot order
+* In Windows, open Veracrypt app, go to settings, advanced options. Uncheck `Force VeraCrypt entry to be the first in the EFI firmware boot menu` and `Automatically fix boot configuration issues that may prevent Windows from starting`. Now boot into Linux and use `efibootmgr` to set the VeraCrypt and Windows Boot Manager as inactive. Grub should now always appear at boot.
+
+## Lutris, esync thing
+* Follow this video: https://yewtu.be/watch?v=AVqsdO7xENg, it is based on these sources: https://wiki.artixlinux.org/Main/Repositories [archive](https://archive.ph/hpjoV), https://forums.gentoo.org/viewtopic-t-1111528-highlight-ulimit.html [archive](https://archive.ph/yZ4M5), https://www.christitus.com/ultimate-linux-gaming-guide/ [archive](https://archive.ph/cpMyn), https://github.com/AUNaseef/protonup
 
 ## Linux alternatives by Dbp:
 ### GUI:
