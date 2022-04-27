@@ -113,7 +113,11 @@ fi
 * In Windows, open Veracrypt app, go to settings, advanced options. Uncheck `Force VeraCrypt entry to be the first in the EFI firmware boot menu` and `Automatically fix boot configuration issues that may prevent Windows from starting`. Now boot into Linux and use `efibootmgr` to set the VeraCrypt and Windows Boot Manager as inactive. Grub should now always appear at boot.
 
 ## Lutris, esync thing
-* Follow this video: https://yewtu.be/watch?v=AVqsdO7xENg, it is based on these sources: https://wiki.artixlinux.org/Main/Repositories [archive](https://archive.ph/hpjoV), https://forums.gentoo.org/viewtopic-t-1111528-highlight-ulimit.html [archive](https://archive.ph/yZ4M5), https://www.christitus.com/ultimate-linux-gaming-guide/ [archive](https://archive.ph/cpMyn), https://github.com/AUNaseef/protonup
+* Follow this video: https://yewtu.be/watch?v=AVqsdO7xENg / [post](https://forum.artixlinux.org/index.php/topic,3336.0.html)/[archive](https://archive.ph/jJPyt) , it is based on these sources: https://wiki.artixlinux.org/Main/Repositories [archive](https://archive.ph/hpjoV), https://forums.gentoo.org/viewtopic-t-1111528-highlight-ulimit.html [archive](https://archive.ph/yZ4M5), https://www.christitus.com/ultimate-linux-gaming-guide/ [archive](https://archive.ph/cpMyn), https://github.com/AUNaseef/protonup
+
+## Can't open X apps after a while / .Xauthority breaks
+* From the Gentoo Wiki: When NetworkManager connects to a WiFi access point, it might change your hostname. If it does, it might mess with your X authentication and prevent you from launching X applications. You can verify this with xauth list.
+*To fix this, you can set `hostname-mode = none` in your config (`/etc/NetworkManager/NetworkManager.conf`).
 
 ## pip search
 * `pip search` was discontinued. Use [pip-search](https://pypi.org/project/pip-search/). Add the snippet provided on the website to `.bashrc` and you'll be able to use `pip search <query>` again
