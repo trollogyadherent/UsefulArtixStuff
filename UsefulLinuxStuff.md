@@ -119,6 +119,11 @@ fi
 * From the Gentoo Wiki: When NetworkManager connects to a WiFi access point, it might change your hostname. If it does, it might mess with your X authentication and prevent you from launching X applications. You can verify this with xauth list.
 *To fix this, you can set `hostname-mode = none` in your config (`/etc/NetworkManager/NetworkManager.conf`).
 
+## Mapping controllers to xbox360
+* Bought some shitty plastic controller but of course the mappings are nonsense? Install `gamepad-tool-bin` from the AUR and launch it.
+* Plug in controller, click "Generate a new mapping". When you are done, click on "Copy Mapping String". Save it in some file, her it is `~/mappings/my_mapping`
+* In your `.bash_profile` append the following line: `export SDL_GAMECONTROLLERCONFIG=$SDL_GAMECONTROLLERCONFIG:`cat ~/mappings/my_mapping``. This adds the mapping to the SDL environment variable. Yup, it is indeed stored in a long-ass env var. If you want to map other stuff, just append the same export line, just change the mapping file.
+
 ## pip search
 * `pip search` was discontinued. Use [pip-search](https://pypi.org/project/pip-search/). Add the snippet provided on the website to `.bashrc` and you'll be able to use `pip search <query>` again
 
