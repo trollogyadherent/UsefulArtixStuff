@@ -127,6 +127,9 @@ fi
 ## pip search
 * `pip search` was discontinued. Use [pip-search](https://pypi.org/project/pip-search/). Add the snippet provided on the website to `.bashrc` and you'll be able to use `pip search <query>` again
 
+## Use playerctl with mpv
+* Download `mpris.so` from [here](https://github.com/hoyon/mpv-mpris/releases)
+* Place it in `~/.config/mpv/scripts`
 
 # Other/Misc
 
